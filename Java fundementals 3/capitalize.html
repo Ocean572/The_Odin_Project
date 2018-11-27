@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+</style>
+<body>
+    <h1 id="myHeader1">This is a test</h1>
+    <script>
+        let response = prompt("Give me a string?", 'string');
+
+        let capResponse = function() {
+            return (response.charAt(0));
+        }
+
+        let cap = function() {
+            let result = capResponse();
+            return (result.toUpperCase());
+        }
+
+        let cap2 = function() {
+            let str = response;
+            let res = str.substr(1);
+            return (cap() + res)
+        }
+    
+    alert(cap2())
+
+    </script>
+</body>
+</html>

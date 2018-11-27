@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+</style>
+<body>
+    <h1 id="myHeader1">This is a test</h1>
+    <script>
+        let firstNumber = prompt("give me the first number");
+        let secondNumber = prompt("give me the second number");
+
+        let multiplier = function() {
+            return (parseInt(firstNumber) * parseInt(secondNumber));
+        }
+
+        let output = function() {
+            document.querySelector('h1').innerHTML = "The number is " + multiplier();
+        }
+
+        output();
+
+    </script>
+</body>
+</html>
