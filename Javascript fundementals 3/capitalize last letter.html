@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+</style>
+<body>
+    <h1 id="myHeader1">This is a test</h1>
+    <script>
+        let response = prompt("Ill give you the last letter of the string");
+        
+        let x = response.length;
+        let y = (x-1);
+
+        let lastLetter = function() {
+            let n = response.substring(y, x);
+            let a = response.substring(0, y);
+            let responseCap = n.toUpperCase();
+            return (a + responseCap);
+        }
+
+        alert(lastLetter());
+        
+        
+
+    </script>
+</body>
+</html>
