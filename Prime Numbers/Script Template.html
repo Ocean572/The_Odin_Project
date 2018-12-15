@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Script Template</title>
+</head>
+<body>
+    <h1 id="test"></h1>
+    <script>
+        let tester = [];
+        let primeNumbers = [];
+        let num = prompt("Input a number and I will indicate all the prime numbers between the number given and 2");
+        for (let i = num; i >= 2; i--) { //counts down from the first number
+            let divisor = i;
+            let tester = [];
+            for (let x = divisor; x >= 0; x--) { //checking each number if its a prime number
+                if (divisor % x == 0 && x !== 1 && x !== divisor) {
+                    tester.push(x); //if passes not a prime number
+                    }   else if (x == 0 && tester.length == 0) {
+                            primeNumbers.push(i);
+                            tester = [];
+
+                    }
+                }   
+            }
+
+        alert(primeNumbers);
+    </script>
+</body>
+</html>
